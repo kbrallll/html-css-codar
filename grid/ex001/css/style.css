@@ -1,0 +1,118 @@
+@charset "UTF=8";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*  O GRID SEMPRE VAI ATACAR A TAG PAI E VC PODE REDIMENSIONAR AS TAG FILHAS TBM 
+    
+    O GRID-TEMPLATE-COLUMNS DEFINE OS VALORES E A QTD DE COLUNAS QUE VC IRÁ TRABLHAR 
+    
+    O GRID-TEMPLATE-ROWS DEFINE OS VALORES E A QTD DE LINHAS QUE VC IRÁ TRABLHAR 
+    
+    GAP VAI DAR O ESPAÇAMENTO ENTRE OS ITENS
+
+    grid-row-gap parece ser uma tag descontinuada e ela dá o espacamento entre linhas
+
+    grid-columns-gap parece ser uma tag descontinuada e ela dá o espacamento entre colunas
+*/
+
+/* GRID DE INICIO
+.container {
+    background-color: #333;
+    border: 1px solid red;
+    padding: 15px;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: 50px auto 10%;
+    grid-template-rows: 70% 30%;
+    gap: 5px;
+    
+}
+
+.container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+
+}
+
+*/
+
+/*TEMPLATE AREAS
+    GRID-TEMPLATE-AREAS VC DEFINE QUANTAS COLUNAS VAI FICAR SEU SITE AQUI VC ESTÁ ATACANDO A TAG PAI
+
+    GRID-AREA VC DEFINE A POSIÇÃO DE CADA AREA E AQUI VC ESTA ATACANDO A TAG FILHA
+
+
+.container {
+    background-color: #333;
+    border: 1px solid red;
+    padding: 5px;
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+     'header header header header'
+     'sidebar content content content'
+     'footer footer footer footer'
+    ;
+    
+}
+
+.container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+
+}
+
+#header {
+    grid-area: header;
+    height: 20vh;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    height: 70vh;
+}
+
+#content {
+    grid-area: content;
+    height: 70vh;
+}
+
+#footer {
+    grid-area: footer;
+    height: 5vh;
+}
+
+*/
+
+/*ALINHAMENTO 
+    ALINHAMENTO HORIZONTAL COM O JUSTIFY CONTENT, VC PODE CENTRARLIZA-LOS NO CENTRO, NO COMEÇO E NO FIM 
+
+    ALINHAMENTO VERTICAL COM O ALIGN-ITEMS, VC PODE CENTRARLIZA-LOS NO CENTRO, NO COMEÇO E NO FIM 
+
+*/
+
+.container {
+    background-color: #333;
+    border: 1px solid red;
+    padding: 15px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+     'auto auto auto'
+    ;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+
+}
