@@ -94,7 +94,7 @@
 
     ALINHAMENTO VERTICAL COM O ALIGN-ITEMS, VC PODE CENTRARLIZA-LOS NO CENTRO, NO COMEÇO E NO FIM 
 
-*/
+
 
 .container {
     background-color: #333;
@@ -116,3 +116,65 @@
     border: 1px solid blue;
 
 }
+
+*/
+
+/* ITEMS ALINHAMENTO POR ITEMS 
+
+ GRID-COLUMN-START DEFINE A COLUNA QUE A DIV VAI INICIAR
+
+ GRID-COLUMN-END VAI DEFINIR AONDE A COLUNA VAI TERMINAR, COLOCAR SEMPRE 1 A +
+
+ GRID-ROW-START MSM REGRA DA COLUNA SÓ QUE PARA LINHA 
+
+ GRID-ROW-END MSM REGRA DA COLUNA SÓ QUE PARA LINHA
+
+ JUSTIFY-SELF ALINHAMENTO VERTICAL TENDO OS VALORES END | START | CENTER
+ 
+ ALIGN-SELF ALINHAMENTO HORIZONTAL 
+*/
+
+.container {
+    background-color: #333;
+    border: 1px solid red;
+    padding: 15px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+     'auto auto auto'
+    ;
+}
+
+.container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+
+}
+
+#item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#item-2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#item-3 {
+    justify-self: end;
+}
+
+#item-5 {
+    justify-self: start;
+}
+
+#item-4 {
+    align-self: self-start ;
+}
+
+#item-6 {
+    align-self: center;
+}
+
